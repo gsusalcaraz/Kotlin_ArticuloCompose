@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting()
+                    Articulo()
                 }
             }
         }
@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(modifier: Modifier = Modifier) {
+fun Articulo(modifier: Modifier = Modifier) {
     Column() {
         Image(
             painter = painterResource(id = R.drawable.bg_compose_background),
@@ -74,6 +74,6 @@ fun Greeting(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     Kotlin_ArticuloComposeTheme {
-        Greeting()
+        Articulo()
     }
 }
